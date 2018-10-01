@@ -17,6 +17,8 @@
 		D64F92812161F565005ED93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64F927F2161F565005ED93A /* LaunchScreen.storyboard */; };
 		D64F928C2161F566005ED93A /* TestGitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F928B2161F566005ED93A /* TestGitTests.swift */; };
 		D64F92972161F566005ED93A /* TestGitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F92962161F566005ED93A /* TestGitUITests.swift */; };
+		D64F92A62162015F005ED93A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F92A42162015F005ED93A /* FirstViewController.swift */; };
+		D64F92A72162015F005ED93A /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64F92A52162015F005ED93A /* FirstViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		D64F92922161F566005ED93A /* TestGitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64F92962161F566005ED93A /* TestGitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGitUITests.swift; sourceTree = "<group>"; };
 		D64F92982161F566005ED93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64F92A42162015F005ED93A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D64F92A52162015F005ED93A /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		E0D03187D4AC9D39985CEDA5 /* Pods-TestGitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestGitUITests/Pods-TestGitUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,8 @@
 			children = (
 				D64F92762161F55E005ED93A /* AppDelegate.swift */,
 				D64F92782161F55E005ED93A /* ViewController.swift */,
+				D64F92A42162015F005ED93A /* FirstViewController.swift */,
+				D64F92A52162015F005ED93A /* FirstViewController.xib */,
 				D64F927A2161F55E005ED93A /* Main.storyboard */,
 				D64F927D2161F565005ED93A /* Assets.xcassets */,
 				D64F927F2161F565005ED93A /* LaunchScreen.storyboard */,
@@ -276,6 +282,7 @@
 				D64F92812161F565005ED93A /* LaunchScreen.storyboard in Resources */,
 				D64F927E2161F565005ED93A /* Assets.xcassets in Resources */,
 				D64F927C2161F55E005ED93A /* Main.storyboard in Resources */,
+				D64F92A72162015F005ED93A /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,11 +329,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestGit/Pods-TestGit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/sReto/sReto.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sReto.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64F92A62162015F005ED93A /* FirstViewController.swift in Sources */,
 				D64F92792161F55E005ED93A /* ViewController.swift in Sources */,
 				D64F92772161F55E005ED93A /* AppDelegate.swift in Sources */,
 			);
