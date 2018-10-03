@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,28 +18,41 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2w-az-Qb2">
-                    <rect key="frame" x="97" y="101" width="65" height="21"/>
+                <label verifyAmbiguity="ignoreSizes" opaque="NO" userInteractionEnabled="NO" contentMode="bottom" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2w-az-Qb2">
+                    <rect key="frame" x="97" y="81" width="65" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="pkk-8l-luF"/>
                         <constraint firstAttribute="width" constant="65" id="sel-AV-Tfo"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="0.0" bottom="8" trailing="8"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.39935293914642267" green="1" blue="0.53909284542565028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.43993077007114845" green="0.43401786137752152" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="18" name="Arial-ItalicMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingHead" baseWritingDirection="rightToLeft" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.89411764709999997" green="0.023529411760000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="0.0"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rar-7a-iPo">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rar-7a-iPo">
                     <rect key="frame" x="46" y="224" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.4627235254" blue="0.25616505109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="p2w-az-Qb2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="81" id="jC1-VJ-3YF"/>
-                <constraint firstItem="p2w-az-Qb2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="97" id="nvl-5c-afg"/>
+                <constraint firstAttribute="trailing" secondItem="rar-7a-iPo" secondAttribute="trailing" constant="89" id="Aeu-rP-feu"/>
+                <constraint firstAttribute="bottom" secondItem="rar-7a-iPo" secondAttribute="bottom" constant="315" id="Ufs-Ms-mTJ"/>
+                <constraint firstItem="rar-7a-iPo" firstAttribute="top" secondItem="p2w-az-Qb2" secondAttribute="bottom" constant="122" id="blY-T8-OO3"/>
+                <constraint firstItem="rar-7a-iPo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="46" id="hyk-IY-FVy"/>
+                <constraint firstItem="p2w-az-Qb2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="jC1-VJ-3YF"/>
+                <constraint firstItem="p2w-az-Qb2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="97" id="nvl-5c-afg"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
 </document>
